@@ -101,6 +101,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="1L5-uC-vMg" id="Rdc-D8-HsV"/>
+                        <outlet property="forwardButton" destination="Hs3-Ke-rwg" id="pBY-Ep-1bB"/>
+                        <outlet property="forwardShadow" destination="TpG-1o-qZv" id="iXS-ph-x9r"/>
+                        <outlet property="playPauseButton" destination="YvU-fJ-QY6" id="pig-AD-Ayy"/>
+                        <outlet property="playPauseShadow" destination="7OH-Yy-SAa" id="QxJ-B6-Uh7"/>
+                        <outlet property="reverseButton" destination="2tq-7a-rTL" id="Fgo-WJ-bBM"/>
+                        <outlet property="reverseShadow" destination="fKk-yp-GJG" id="0St-8k-RW8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
