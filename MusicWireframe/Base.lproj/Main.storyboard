@@ -59,6 +59,10 @@
                                             <constraint firstAttribute="height" constant="60" id="ZxU-hF-75L"/>
                                         </constraints>
                                         <state key="normal" title="Reverse" image="reverse"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Fsx-cQ-G42"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQv-j2-dxD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvU-fJ-QY6">
                                         <rect key="frame" x="110" y="0.0" width="60" height="60"/>
@@ -69,6 +73,8 @@
                                         <state key="normal" title="PlayPause" image="play"/>
                                         <connections>
                                             <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZ6-Em-Z3q"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="xYO-Xh-K2x"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Hr-ii-d66"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs3-Ke-rwg">
@@ -78,6 +84,10 @@
                                             <constraint firstAttribute="width" constant="60" id="xnx-ps-u6I"/>
                                         </constraints>
                                         <state key="normal" title="Forward" image="forward"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Tew-Sp-SdX"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khP-Ko-iSB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

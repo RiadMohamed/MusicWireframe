@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var reverseButton: UIButton!
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         reverseShadow.layer.cornerRadius = 35.0
@@ -53,6 +55,50 @@ class ViewController: UIViewController {
         }
         isPlaying.toggle()
     }
+    
+    @IBAction func touchedDown(_ sender: UIButton) {
+        let buttonBackground: UIView
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseShadow
+        case playPauseButton:
+            buttonBackground = playPauseShadow
+        case forwardButton:
+            buttonBackground = forwardShadow
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+    }
+   
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseShadow
+        case playPauseButton:
+            buttonBackground = playPauseShadow
+        case forwardButton:
+            buttonBackground = forwardShadow
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            buttonBackground.alpha = 0.0
+            buttonBackground.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            sender.transform = CGAffineTransform.identity
+        }) { (_) in
+            buttonBackground.transform = CGAffineTransform.identity
+        }
+    }
+    
+    
+    
     
 }
 
