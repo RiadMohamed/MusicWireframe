@@ -67,6 +67,9 @@
                                             <constraint firstAttribute="height" constant="60" id="dsb-WJ-EMD"/>
                                         </constraints>
                                         <state key="normal" title="PlayPause" image="play"/>
+                                        <connections>
+                                            <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZ6-Em-Z3q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs3-Ke-rwg">
                                         <rect key="frame" x="220" y="0.0" width="60" height="60"/>
